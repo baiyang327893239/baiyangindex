@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuickReq Support</title>
+  <style>
+    :root {
+      --bg: #f3f6fb;
+      --surface: #ffffff;
+      --surface-soft: #eef4ff;
+      --border: #d8e2f0;
+      --text: #162033;
+      --subtext: #5c6a80;
+      --accent: #4b7fff;
+      --accent-deep: #6e9cff;
+      --shadow: 0 18px 40px rgba(32, 64, 128, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Noto Sans JP", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: linear-gradient(180deg, #f7f9fd 0%, var(--bg) 100%);
+      color: var(--text);
+    }
+
+    .page {
+      width: min(920px, calc(100% - 32px));
+      margin: 32px auto 48px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 28px;
+      border-radius: 28px;
+      background: linear-gradient(135deg, var(--accent-deep), var(--accent));
+      color: #fff;
+      box-shadow: var(--shadow);
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -24px;
+      top: -24px;
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.14);
+    }
+
+    .eyebrow {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.16);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    h1 {
+      margin: 14px 0 8px;
+      font-size: 32px;
+      line-height: 1.2;
+    }
+
+    .hero p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.88);
+      max-width: 640px;
+    }
+
+    .panel {
+      margin-top: 18px;
+      padding: 22px;
+      border-radius: 22px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .panel h2 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    .panel h3 {
+      margin: 0 0 8px;
+      font-size: 16px;
+      font-weight: 800;
+    }
+
+    .section {
+      padding: 18px 0;
+      border-top: 1px solid #edf1f7;
+    }
+
+    .section:first-of-type {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    p, li {
+      margin: 0;
+      color: var(--subtext);
+      font-size: 14px;
+      line-height: 1.9;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 20px;
+    }
+
+    .mail-box {
+      margin-top: 12px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      background: var(--surface-soft);
+      border: 1px solid var(--border);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--accent);
+      word-break: break-all;
+    }
+
+    .lang-tag {
+      display: inline-block;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--surface-soft);
+      color: var(--accent);
+      font-size: 12px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .footer-note {
+      margin-top: 18px;
+      font-size: 12px;
+      color: var(--subtext);
+      text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        width: calc(100% - 20px);
+        margin: 16px auto 28px;
+      }
+
+      .hero,
+      .panel {
+        border-radius: 20px;
+        padding: 18px;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      .panel h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="eyebrow">QuickReq</div>
+      <h1>サポート</h1>
+      <p>
+        QuickReq（建プロ書類）に関するお問い合わせ、利用方法、動作上のご質問についてご案内します。
+        ご連絡の際は、できるだけ利用端末、発生した画面、問題の内容をご記載ください。
+      </p>
+    </section>
+
+    <section class="panel">
+      <div class="lang-tag">日本語</div>
+      <h2>お問い合わせ先</h2>
+
+      <div class="section">
+        <h3>メールサポート</h3>
+        <p>不具合報告、操作方法、会員機能に関するお問い合わせは、以下の窓口までご連絡ください。</p>
+        <div class="mail-box">support@quickreq.app</div>
+      </div>
+
+      <div class="section">
+        <h3>ご連絡時に含めていただきたい内容</h3>
+        <ul>
+          <li>ご利用端末（iPhone / iPad）</li>
+          <li>iOS バージョン</li>
+          <li>発生した画面や操作手順</li>
+          <li>エラーメッセージの有無</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>主なサポート内容</h3>
+        <ul>
+          <li>見積書 / 請求書の作成方法</li>
+          <li>会員購入・復元購入に関する案内</li>
+          <li>Excel / PDF 出力に関する案内</li>
+          <li>アプリの不具合に関する確認</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="lang-tag">中文参考</div>
+      <h2>支持说明</h2>
+
+      <div class="section">
+        <h3>联系方式</h3>
+        <p>有关 QuickReq 的使用方法、会员购买、导出问题或异常反馈，请联系以下支持邮箱。</p>
+        <div class="mail-box">support@quickreq.app</div>
+      </div>
+
+      <div class="section">
+        <h3>建议一并提供的信息</h3>
+        <ul>
+          <li>所使用的设备型号（iPhone / iPad）</li>
+          <li>iOS 系统版本</li>
+          <li>出现问题的页面和操作步骤</li>
+          <li>是否有错误提示信息</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h3>支持范围</h3>
+        <ul>
+          <li>报价单 / 请求书制作方法</li>
+          <li>会员购买与恢复购买说明</li>
+          <li>Excel / PDF 导出相关问题</li>
+          <li>应用异常与故障反馈</li>
+        </ul>
+      </div>
+    </section>
+
+    <p class="footer-note">QuickReq Support Page</p>
+  </main>
+</body>
+</html>
